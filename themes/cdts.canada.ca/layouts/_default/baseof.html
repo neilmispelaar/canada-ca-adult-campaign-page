@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{{ `<!--[if lt IE 9]><html class="no-js lt-ie9"` | safeHTML }} lang="{{ .Lang }}"{{ `><![endif]-->` | safeHTML }}
+{{ `<!--[if gt IE 8]><!-->` | safeHTML }}
+<html class="no-js" lang="{{ .Lang }}"  {{/* dir="{{{i18n "lang-dir"}}}"  */}}>
+{{ `<!--<![endif]-->` | safeHTML }}
+    <head>
+        {{- partial "head.html" . -}}
+    </head>
+    <body {{/* {{#if pageclass}}class="{{pageclass}}" {{/if}} */}}  vocab="http://schema.org/" typeof="WebPage">
+        
+        {{- partial "cdts/deftop.html" -}}
+
+        
+        <main role="main" property="mainContentOfPage" class="container">
+
+        {{ block "main" . }}
+        <!-- The part of the page that begins to differ between templates -->
+        {{ end }}
+
+        {{- partial "cdts/defprefooter.html" -}}
+
+        </main> 
+
+        {{- partial "cdts/deffooter.html" -}}
+        
+        {{- partial "cdts/reffooter.html" -}}
+       
+    </body>
+</html>

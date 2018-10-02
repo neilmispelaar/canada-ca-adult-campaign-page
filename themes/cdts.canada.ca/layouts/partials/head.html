@@ -1,0 +1,28 @@
+{{/* 
+
+<meta charset="utf-8" />
+{{>license}}
+<title>{{ title }}</title>
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+
+{{>metadata}}
+
+{{>cdts-scripts}}
+
+{{>cdts-reftop}}
+
+*/}}
+
+    <meta charset="utf-8" />
+    <title>{{ .Title }}</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    {{with .Description}}
+    <meta name="description" content="{{.}}" />
+    {{end}}
+
+    {{- partial "cdts/scripts.html" -}}
+
+    {{- partial "cdts/reftop.html" -}}
+    
+    {{ partial "custom/head.html" . }}

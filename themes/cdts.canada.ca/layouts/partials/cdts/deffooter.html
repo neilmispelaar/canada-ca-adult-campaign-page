@@ -1,0 +1,11 @@
+    
+    <div id="def-footer">
+        {{ `<!-- Write closure template -->` | safeHTML }}
+        <script>
+            var defFooter = document.getElementById("def-footer");
+            defFooter.outerHTML = wet.builder.appFooter({
+                "cdnEnv": cdnEnvVar,
+                "showFeatures": false
+            });
+        </script>
+    </div>

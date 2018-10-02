@@ -1,0 +1,14 @@
+    
+    {{ `<!-- Load closure template scripts -->` | safeHTML }}
+    <script src="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_28/cdts/compiled/soyutils.js"></script>
+    {{ if eq .Lang "fr" }}
+    <script src="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_28/cdts/compiled/wet-fr.js"></script>
+    {{ else }}
+    <script src="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_28/cdts/compiled/wet-en.js"></script>
+    {{ end }}
+    <script>
+        function getURLParameter(e){return decodeURIComponent((new RegExp("[?|&]"+e+"=([^&;]+?)(&|#|;|$)").exec(location.search)||[null,""])[1].replace(/\+/g,"%20"))||null}cdnEnvVar=getURLParameter("cdnEnv"),cdnEnvVar||(cdnEnvVar="esdcprod");
+    </script>
+
+    
+		

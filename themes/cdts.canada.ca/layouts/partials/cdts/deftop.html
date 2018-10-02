@@ -1,0 +1,25 @@
+    
+    <div id="def-top">
+    {{ `<!-- Write closure template -->` | safeHTML }}
+    <script>
+        var defTop = document.getElementById("def-top");
+        defTop.outerHTML = wet.builder.top({
+            "cdnEnv": cdnEnvVar,
+            "appName": [{
+                "text": "Application Name"
+            }],
+            "lngLinks": [{
+                "lang": "TODO",
+                "href": "TODO",
+                {{if eq .Lang "fr"}}
+                "text": "English"
+                {{else}}
+                "text": "Français"
+                {{end}}
+            }],
+            search: true,
+			siteMenu: false,
+			showPreContent: false
+        });
+    </script>
+    </div>
