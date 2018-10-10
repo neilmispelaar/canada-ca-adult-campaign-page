@@ -5,7 +5,11 @@
             var defFooter = document.getElementById("def-footer");
             defFooter.outerHTML = wet.builder.appFooter({
                 "cdnEnv": cdnEnvVar,
+                {{ with .Params.cdtsconfig.showFeatures }}
+                "showFeatures": {{ . }}
+                {{ else }}
                 "showFeatures": false
+                {{ end }}
             });
         </script>
     </div>

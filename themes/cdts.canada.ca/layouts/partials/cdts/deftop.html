@@ -6,7 +6,7 @@
         defTop.outerHTML = wet.builder.top({
             "cdnEnv": cdnEnvVar,
             "appName": [{
-                "text": "Application Name"
+                "text": ""
             }],
             "lngLinks": [{
                 "lang": "TODO",
@@ -17,9 +17,25 @@
                 "text": "Français"
                 {{end}}
             }],
+            {{ with .Params.cdtsconfig.search }}
+            search: {{ . }},
+            {{ else }}
             search: true,
-			siteMenu: false,
-			showPreContent: false
+            {{ end }}
+
+            {{ with .Params.cdtsconfig.siteMenu }}
+            siteMenu: {{ . }},
+            {{ else }}
+            siteMenu: false,
+            {{ end }}
+
+            {{ with .Params.cdtsconfig.showPreContent }}
+            showPreContent: {{ . }},
+            {{ else }}
+            showPreContent: true,
+            {{ end }}
+            "customSearch": "test"
+
         });
     </script>
     </div>

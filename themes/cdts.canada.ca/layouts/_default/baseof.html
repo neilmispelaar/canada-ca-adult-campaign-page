@@ -8,7 +8,7 @@
     </head>
     <body {{/* {{#if pageclass}}class="{{pageclass}}" {{/if}} */}}  vocab="http://schema.org/" typeof="WebPage">
         
-        {{- partial "cdts/deftop.html" -}}
+        {{- partial "cdts/deftop.html" . -}}
 
         
         <main role="main" property="mainContentOfPage" class="container">
@@ -17,13 +17,13 @@
         <!-- The part of the page that begins to differ between templates -->
         {{ end }}
 
-        {{- partial "cdts/defprefooter.html" -}}
+        {{- partial "cdts/defprefooter.html" . -}}
 
         </main> 
 
-        {{- partial "cdts/deffooter.html" -}}
+        {{- partial "cdts/deffooter.html" . -}}
         
-        {{- partial "cdts/reffooter.html" -}}
+        {{- partial "cdts/reffooter.html" . -}}
        
     </body>
 </html>
