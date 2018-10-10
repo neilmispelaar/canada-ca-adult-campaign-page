@@ -9,7 +9,171 @@
    Scope Class   
    ========================================================================== */
 
-   .esdcadultlearningcampaign { 
+.esdcadultlearningcampaign { 
     color: #2D2B2C !important;
 }
 
+
+/* ==========================================================================
+   Background Image Classes   
+   ========================================================================== */
+
+.esdcadultlearningcampaign .alc-hero-bg { 
+    height: 300px;
+    width: 100%;
+    background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+}
+
+/*Small view and under*/
+@media screen and (max-width: 991px) {
+
+    .esdcadultlearningcampaign .alc-hero-bg { 
+        height: 150px;
+    }
+}
+
+/* ==========================================================================
+   Tagline Classes   
+   ========================================================================== */
+   
+.esdcadultlearningcampaign .alc-hero-tagline-1 { 
+    background-color: red;
+    font-size: 5rem;
+    font-weight: 600;
+    color: yellowgreen;
+}
+
+.esdcadultlearningcampaign .alc-hero-tagline-2 { 
+    display: flex;
+    align-items: center;
+    background-color: blue;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 100%;
+}
+
+
+.esdcadultlearningcampaign .alc-hero-flex-container { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 20px 0px 20px 0px;
+}
+
+.esdcadultlearningcampaign .alc-hero-line-1 { 
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 60%;
+
+    font-size: 5.2rem;
+    font-weight: 600;
+    color: yellowgreen;
+    border-right: 1px solid grey;
+}
+
+.esdcadultlearningcampaign .alc-hero-line-2 {
+    flex-basis: auto;
+
+    font-size: 2.3rem;
+    font-weight: 500;
+    color: grey;
+    padding: 40px;
+
+}
+
+/*Small view and under*/
+@media screen and (max-width: 991px) {
+    .esdcadultlearningcampaign .alc-hero-flex-container { 
+        flex-direction: column;
+    }
+
+    .esdcadultlearningcampaign .alc-hero-line-1 { 
+        
+        font-size: 3.0rem;
+        border-right: none;
+        line-height: 100%;
+    }
+
+    .esdcadultlearningcampaign .alc-hero-line-2 {
+        font-size: 2.0rem;
+        
+        padding: 0px;
+    }
+}
+
+
+/* ==========================================================================
+   Navigation Card Classes   
+   ========================================================================== */
+
+.esdcadultlearningcampaign .alc-nav-card { 
+    text-align: center;
+    padding: 10px;
+}
+
+.esdcadultlearningcampaign .alc-nav-card .alc-nav-card-flex-container { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+.esdcadultlearningcampaign .alc-nav-card .alc-nav-card-flex-container .svg-icon { 
+    order: -1;
+}
+
+.esdcadultlearningcampaign .alc-nav-card .svg-icon { 
+    background-color: black;
+    width: 40%;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 30px 0px 10px 0px;
+}
+
+.esdcadultlearningcampaign .alc-nav-card a {
+    text-decoration: none !important;
+    display: block;
+} 
+
+.esdcadultlearningcampaign .alc-nav-card a h2 { 
+
+    color: grey !important;
+
+    margin: 10px 0px 10px 0px;
+    padding: 0px 0px 0px 0px;
+
+}
+
+.esdcadultlearningcampaign .alc-nav-card a p { 
+    font-size: 1.8rem;
+    color: grey !important;
+    margin-bottom: 30px;
+
+}
+
+.esdcadultlearningcampaign .alc-nav-card .alc-nav-card-flex-container { 
+    transition: 0.1s ease-in;
+}
+.esdcadultlearningcampaign .alc-nav-card .alc-nav-card-flex-container:hover { 
+    transform: scale(1.1);
+    transition: 0.1s ease-in;
+}
+
+.esdcadultlearningcampaign .alc-nav-card.jobs a .svg-icon,
+.esdcadultlearningcampaign .alc-nav-card.apprentice a .svg-icon,
+.esdcadultlearningcampaign .alc-nav-card.school a .svg-icon,
+.esdcadultlearningcampaign .alc-nav-card.jobs a:hover .svg-icon,
+.esdcadultlearningcampaign .alc-nav-card.apprentice a:hover .svg-icon,
+.esdcadultlearningcampaign .alc-nav-card.school a:hover .svg-icon {
+    transition: 0.2s ease-in;
+}
+
+
+.esdcadultlearningcampaign .alc-nav-card.jobs .svg-icon { 
+    background-color: green;
+}
+
+.esdcadultlearningcampaign .alc-nav-card.jobs a:hover .svg-icon { 
+    background-color: black;
+}
