@@ -21,7 +21,7 @@
 .esdcadultlearningcampaign .alc-hero-bg { 
     height: 300px;
     width: 100%;
-    background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+    background: linear-gradient(45deg, #590957 0%, #137d79 50%, #db2c29 100%);
 }
 
 /*Small view and under*/
@@ -51,7 +51,7 @@
 
     font-size: 5.2rem;
     font-weight: 600;
-    color: yellowgreen;
+    color: #605a07;
     border-right: 1px solid grey;
 }
 
@@ -153,8 +153,24 @@
 }
 
 
+.esdcadultlearningcampaign .alc-nav-card.apprentice .svg-icon { 
+    background-color: #590957;
+}
+
+.esdcadultlearningcampaign .alc-nav-card.apprentice a:hover .svg-icon { 
+    background-color: black;
+}
+
+.esdcadultlearningcampaign .alc-nav-card.school .svg-icon { 
+    background-color: #137d79;
+}
+
+.esdcadultlearningcampaign .alc-nav-card.school a:hover .svg-icon { 
+    background-color: black;
+}
+
 .esdcadultlearningcampaign .alc-nav-card.jobs .svg-icon { 
-    background-color: green;
+    background-color: #db2c29;
 }
 
 .esdcadultlearningcampaign .alc-nav-card.jobs a:hover .svg-icon { 
@@ -167,7 +183,7 @@
    ========================================================================== */
 
 .esdcadultlearningcampaign .alc-section-container { 
-
+    margin: 25px 0px 100px 0px;
 }
 
 .esdcadultlearningcampaign .alc-section-container .alc-section-bg { 
@@ -183,11 +199,12 @@
 .esdcadultlearningcampaign .alc-section-container .alc-section-heading h2 { 
     margin: 20px 0px 0px 0px;
     font-size: 4.0rem;
-    color: #3F2B96;
+    color: grey;
 }
 
 .esdcadultlearningcampaign .alc-section-container .alc-section-heading p { 
     font-size: 2.3rem;
+    margin: 10px 0px 0px 0px;
     color: grey;
 }
 
@@ -198,27 +215,136 @@
     flex-wrap: nowrap;
     justify-content: space-around;
 
-    background-color: grey;
+    margin: 25px 0px 0px 0px;
 } 
 
 .esdcadultlearningcampaign .alc-section-container .alc-section-links .subsection { 
     background-color: #ffffff;
     box-shadow: 14px 18px 50px -8px grey;
     border-radius: 3px;
+    padding: 20px; 
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: 25%;
 }
 
-/* Apprentice Customisation */
-.esdcadultlearningcampaign .alc-section-container.apprentice .alc-section-bg { 
-    background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+.esdcadultlearningcampaign .alc-section-container .alc-section-links .subsection h3 {
+    margin: 0px 0px 10px 0px;
+    padding: 0px 0px 0px 0px;
+    font-size: 2.5rem;
 }
 
-.esdcadultlearningcampaign .alc-section-container.apprentice .alc-section-links { 
-    background: linear-gradient(to bottom, rgba(248,80,50,0) 4%, rgba(248,81,51,0) 5%, rgba(241,111,92,0.85) 50%, rgba(246,41,12,0.87) 51%, rgba(244,43,16,1) 58%, rgba(240,47,23,0.64) 71%, rgba(233,54,36,0) 94%, rgba(231,56,39,0) 100%);
+
+/*Small view and under*/
+@media screen and (max-width: 991px) {
+
+    .esdcadultlearningcampaign .alc-section-container .alc-section-links {
+        flex-direction: column;
+    }
+    
+    .esdcadultlearningcampaign .alc-section-container .alc-section-heading { 
+        margin: 0px 0px 0px 0px;
+    }
+
+    .esdcadultlearningcampaign .alc-section-container .alc-section-bg {
+        height: 150px;   
+    }
+
+    .esdcadultlearningcampaign .alc-section-container .alc-section-links { 
+        margin: 0px 10px 0px 10px;
+        background: none !important;
+    }
+
+    .esdcadultlearningcampaign .alc-section-container .alc-section-links .subsection { 
+        margin: 20px 0px 20px 0px;
+    }
+}
+
+/* Apprentice Customisation */
+.esdcadultlearningcampaign .alc-section-container.apprentice .alc-section-bg { 
+    background: linear-gradient(90deg, #590957 0%, #250023 100%);
+}
+
+.esdcadultlearningcampaign .alc-section-container.apprentice .alc-section-heading h2 { 
+    color: #590957;
 }
 
 .esdcadultlearningcampaign .alc-section-container.apprentice .alc-section-links .subsection { 
-    border-top: 10px solid #3F2B96;
+    border-top: 10px solid #590957;
+}
+
+.esdcadultlearningcampaign .alc-section-container.apprentice .alc-section-links .subsection h3 {
+    color: #590957;
+}
+
+.esdcadultlearningcampaign .alc-section-container.apprentice .alc-section-links { 
+
+    background: linear-gradient(
+      to bottom, 
+      #f9f9f9,
+      #f9f9f9 10%,
+      #a988a7 10%,
+      #a988a7 90%,
+      #f9f9f9 90%
+    );
+}
+
+
+
+/* School Customisation */
+.esdcadultlearningcampaign .alc-section-container.school .alc-section-bg { 
+    background: linear-gradient(90deg, #137d79 0%, #004D4A 100%);
+}
+
+.esdcadultlearningcampaign .alc-section-container.school .alc-section-heading h2 { 
+    color: #137d79;
+}
+
+.esdcadultlearningcampaign .alc-section-container.school .alc-section-links .subsection { 
+    border-top: 10px solid #137d79;
+}
+
+.esdcadultlearningcampaign .alc-section-container.school .alc-section-links .subsection h3 {
+    color: #137d79;
+}
+
+.esdcadultlearningcampaign .alc-section-container.school .alc-section-links { 
+
+    background: linear-gradient(
+      to bottom, 
+      #f9f9f9,
+      #f9f9f9 10%,
+      #d7e5e5 10%,
+      #d7e5e5 90%,
+      #f9f9f9 90%
+    );
+}
+
+/* Job Customisation */
+.esdcadultlearningcampaign .alc-section-container.job .alc-section-bg { 
+    background: linear-gradient(90deg, #db2c29 0%, #8B0400 100%);
+}
+
+.esdcadultlearningcampaign .alc-section-container.job .alc-section-heading h2 { 
+    color: #db2c29;
+}
+
+.esdcadultlearningcampaign .alc-section-container.job .alc-section-links .subsection { 
+    border-top: 10px solid #db2c29;
+}
+
+.esdcadultlearningcampaign .alc-section-container.job .alc-section-links .subsection h3 {
+    color: #db2c29;
+}
+
+.esdcadultlearningcampaign .alc-section-container.job .alc-section-links { 
+
+    background: linear-gradient(
+      to bottom, 
+      #f9f9f9,
+      #f9f9f9 10%,
+      #f4dadb 10%,
+      #f4dadb 90%,
+      #f9f9f9 90%
+    );
 }
