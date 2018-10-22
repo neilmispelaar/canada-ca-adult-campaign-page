@@ -21,7 +21,10 @@
 .esdcadultlearningcampaign .alc-hero-bg { 
     height: 300px;
     width: 100%;
-    background: linear-gradient(45deg, #590957 0%, #137d79 50%, #db2c29 100%);
+    /*background: linear-gradient(45deg, #590957 0%, #137d79 50%, #db2c29 100%); */
+    background-image: url("/images/adult-campaign/hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*Small view and under*/
@@ -263,6 +266,9 @@
 /* Apprentice Customisation */
 .esdcadultlearningcampaign .alc-section-container.apprentice .alc-section-bg { 
     background: linear-gradient(90deg, #590957 0%, #250023 100%);
+    background-image: url("/images/adult-campaign/apprentice-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .esdcadultlearningcampaign .alc-section-container.apprentice .alc-section-heading h2 { 
@@ -294,6 +300,9 @@
 /* School Customisation */
 .esdcadultlearningcampaign .alc-section-container.school .alc-section-bg { 
     background: linear-gradient(90deg, #137d79 0%, #004D4A 100%);
+    background-image: url("/images/adult-campaign/school-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .esdcadultlearningcampaign .alc-section-container.school .alc-section-heading h2 { 
@@ -323,6 +332,9 @@
 /* Job Customisation */
 .esdcadultlearningcampaign .alc-section-container.job .alc-section-bg { 
     background: linear-gradient(90deg, #db2c29 0%, #8B0400 100%);
+    background-image: url("/images/adult-campaign/job-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .esdcadultlearningcampaign .alc-section-container.job .alc-section-heading h2 { 
