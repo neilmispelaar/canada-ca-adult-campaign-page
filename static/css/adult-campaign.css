@@ -54,7 +54,8 @@
 
     font-size: 5.2rem;
     font-weight: 600;
-    color: #605a07;
+    /* color: #605a07; */
+    color: #000000;
     border-right: 1px solid grey;
 }
 
@@ -186,7 +187,7 @@
    ========================================================================== */
 
 .esdcadultlearningcampaign .alc-section-container { 
-    margin: 25px 0px 100px 0px;
+    margin: 100px 0px 190px 0px;
 }
 
 .esdcadultlearningcampaign .alc-section-container .alc-section-bg { 
@@ -196,7 +197,7 @@
 }
 
 .esdcadultlearningcampaign .alc-section-container .alc-section-heading { 
-    margin: 0px 20px 0px 20px;
+    margin: 40px 20px 40px 20px;
 }
 
 .esdcadultlearningcampaign .alc-section-container .alc-section-heading h2 { 
@@ -237,6 +238,13 @@
     font-size: 2.5rem;
 }
 
+.esdcadultlearningcampaign .alc-section-container .alc-section-links .subsection ul li {
+    padding: 10px 0px 10px 0px;
+}
+
+.esdcadultlearningcampaign .alc-section-container .alc-section-links .subsection ul li a {
+    font-size: 1.6rem; 
+}
 
 /*Small view and under*/
 @media screen and (max-width: 991px) {
