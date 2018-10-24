@@ -57,6 +57,7 @@
     /* color: #605a07; */
     color: #000000;
     border-right: 1px solid grey;
+    padding-right: 15px;
 }
 
 .esdcadultlearningcampaign .alc-hero-line-2 {
@@ -80,6 +81,7 @@
         font-size: 3.0rem;
         border-right: none;
         line-height: 100%;
+        padding-right: none;
     }
 
     .esdcadultlearningcampaign .alc-hero-line-2 {
