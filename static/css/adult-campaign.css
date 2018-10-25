@@ -25,10 +25,14 @@
     background-image: url("https://canada-ca-adult-campaign.netlify.com/images/adult-campaign/hero-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
+
+    margin-top: 25px;
 }
 
 .esdcadultlearningcampaign .alc-hero-bg.csg { 
     background-image: url("https://canada-ca-adult-campaign.netlify.com/images/adult-campaign/csg-bg.jpg");
+
+    margin-top: 0px;
 }
 
 /*Small view and under*/
