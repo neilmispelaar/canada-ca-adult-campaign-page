@@ -27,11 +27,86 @@
     background-size: cover;
 }
 
+.esdcadultlearningcampaign .alc-hero-bg.csg { 
+    background-image: url("/images/adult-campaign/school-bg.png");
+}
+
 /*Small view and under*/
 @media screen and (max-width: 991px) {
 
     .esdcadultlearningcampaign .alc-hero-bg { 
         height: 150px;
+    }
+}
+
+/* ==========================================================================
+   CSG Promotional Section Classes   
+   ========================================================================== */
+.esdcadultlearningcampaign .alc-csg-promo-flex-container { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 10px 0px 10px 0px;
+}
+
+.esdcadultlearningcampaign .alc-csg-promo-section-1 { 
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 60%;
+    
+    font-weight: 600;
+    /* color: #605a07; */
+    color: grey;
+    padding-right: 15px;
+}
+
+.esdcadultlearningcampaign .alc-csg-promo-section-1 p:first-child { 
+    font-size: 3.5rem;
+    color: black;
+}
+
+.esdcadultlearningcampaign .alc-csg-promo-section-2 { 
+    margin-left: auto;
+    margin-right: auto;
+}   
+
+.esdcadultlearningcampaign .alc-csg-promo-section-2 .svg-icon { 
+    align-self: center;
+    background-color: black;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 30px 0px 10px 0px;
+}
+
+.esdcadultlearningcampaign .alc-csg-promo-section-2 .svg-icon.apprentice { 
+    background-color: #590957;
+}
+.esdcadultlearningcampaign .alc-csg-promo-section-2 .svg-icon.school { 
+    background-color: #137d79;
+}
+.esdcadultlearningcampaign .alc-csg-promo-section-2 .svg-icon.jobs { 
+    background-color: #db2c29;
+}
+
+/*Small view and under*/
+@media screen and (max-width: 991px) {
+
+    .esdcadultlearningcampaign .alc-csg-promo-flex-container { 
+        flex-direction: column;
+    }
+
+    .esdcadultlearningcampaign .alc-csg-promo-flex-container .alc-csg-promo-section-1 {
+        order: 1;
+    } 
+
+    .esdcadultlearningcampaign .alc-csg-promo-flex-container .alc-csg-promo-section-2 { 
+        order: 0;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 25px;
     }
 }
 
@@ -372,4 +447,84 @@
       #f4dadb 90%,
       #f9f9f9 90%
     );
+}
+
+
+/* CSG Customisation */
+.esdcadultlearningcampaign .alc-section-container.csg .alc-section-heading h2 { 
+    color: #777;
+}
+
+.esdcadultlearningcampaign .alc-section-container.csg .alc-section-links .subsection { 
+    border-top: 10px solid #777;
+}
+
+.esdcadultlearningcampaign .alc-section-container.csg .alc-section-links .subsection h3 {
+    color: #777;
+}
+
+.esdcadultlearningcampaign .alc-section-container.csg .alc-section-links { 
+    margin: 100px 0px 0px 0px;
+
+    background: linear-gradient(
+      to bottom, 
+      #f9f9f9,
+      #f9f9f9 10%,
+      rgb(214, 214, 214) 10%,
+      rgb(214, 214, 214) 90%,
+      #f9f9f9 90%
+    );
+}
+
+/* ==========================================================================
+   CSG Features Section Classes   
+   ========================================================================== */
+
+.esdcadultlearningcampaign ul.alc-csg-features-flex-container { 
+
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+
+    padding: 0px 0px 0px 0px; 
+    margin: 25px 0px 0px 0px;
+
+
+    list-style: none;
+}
+
+.esdcadultlearningcampaign ul.alc-csg-features-flex-container li {
+    
+   
+    padding: 30px;
+    background-color: rgb(214, 214, 214);
+    
+}
+
+.esdcadultlearningcampaign ul.alc-csg-features-flex-container li:first-child {
+    margin-right: 15px; 
+}
+
+.esdcadultlearningcampaign ul.alc-csg-features-flex-container li:last-child {
+    margin-left: 15px;
+}
+
+.esdcadultlearningcampaign ul.alc-csg-features-flex-container li p:first-child {
+    font-size: 3rem; 
+    font-weight: 600;
+}
+
+/*Small view and under*/
+@media screen and (max-width: 991px) {
+
+    .esdcadultlearningcampaign ul.alc-csg-features-flex-container { 
+        flex-direction: column;
+    }
+
+    .esdcadultlearningcampaign ul.alc-csg-features-flex-container li {
+        margin: 20px 10px 0px 10px !important; 
+    }
+
 }
