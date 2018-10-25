@@ -100,10 +100,15 @@
 
     .esdcadultlearningcampaign .alc-csg-promo-flex-container .alc-csg-promo-section-1 {
         order: 1;
+        flex-basis: auto;
+        max-width: 100%;
     } 
 
     .esdcadultlearningcampaign .alc-csg-promo-flex-container .alc-csg-promo-section-2 { 
         order: 0;
+        flex-basis: auto;
+        max-width: 100%;
+        
         margin-left: auto;
         margin-right: auto;
         padding-bottom: 25px;
@@ -136,13 +141,10 @@
 }
 
 .esdcadultlearningcampaign .alc-hero-line-2 {
-    flex-basis: auto;
-
     font-size: 2.3rem;
     font-weight: 500;
     color: grey;
     padding: 40px;
-
 }
 
 /*Small view and under*/
@@ -151,8 +153,11 @@
         flex-direction: column;
     }
 
-    .esdcadultlearningcampaign .alc-hero-line-1 { 
-        
+    .esdcadultlearningcampaign .alc-hero-line-1 {
+        flex-basis: auto;
+        max-width: 100%;
+
+        text-align: left;
         font-size: 3.0rem;
         border-right: none;
         line-height: 100%;
@@ -160,8 +165,11 @@
     }
 
     .esdcadultlearningcampaign .alc-hero-line-2 {
+        flex-basis: auto;
+        max-width: 100%;
+
         font-size: 2.0rem;
-        
+        text-align: left;
         padding: 0px;
     }
 }
@@ -348,6 +356,8 @@
 
     .esdcadultlearningcampaign .alc-section-container .alc-section-links .subsection { 
         margin: 20px 0px 20px 0px;
+        flex-basis: auto;
+        max-width: 100%;
     }
 }
 
