@@ -40,10 +40,10 @@ Nothing overly special was done with the HTML.
 You can find the source for the pages here: 
 
 * [English Adult Learning Source Code](https://github.com/neilmispelaar/canada-ca-adult-campaign-page/blob/master/content/en/_index.html)
-* [English Student Grants Source Code TODO](https://github.com/neilmispelaar/canada-ca-adult-campaign-page/blob/master/content/en/student-grant/_index.html)
+* [English Student Grants Source Code](https://github.com/neilmispelaar/canada-ca-adult-campaign-page/blob/master/content/en/student-grant/_index.html)
 
-* [French Adult Learning Source Code TODO](https://github.com/neilmispelaar/canada-ca-adult-campaign-page/blob/master/content/fr/_index.html)
-* [French Student Grants Source Code TODO](https://github.com/neilmispelaar/canada-ca-adult-campaign-page/blob/master/content/fr/bourse-etudiant/_index.html)
+* [French Adult Learning Source Code](https://github.com/neilmispelaar/canada-ca-adult-campaign-page/blob/master/content/fr/_index.html)
+* [French Student Grants Source Code](https://github.com/neilmispelaar/canada-ca-adult-campaign-page/blob/master/content/fr/bourse-etudiant/_index.html)
 
 ### JavaScript
 
